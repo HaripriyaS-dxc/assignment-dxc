@@ -6,9 +6,8 @@ var verification = function () {
     var vzip = document.getElementById("zip1").value;
     var vmail = document.getElementById("mail1").value;
 
-
-    var vdate = document.getElementById("dob").value;
-    console.log(vdate)
+    var vdob = document.getElementById("dob").value;
+   
 
     var runame = /^[A-Za-z0-9]{5,12}$/;
     var funame = runame.test(vuname);
@@ -20,12 +19,18 @@ var verification = function () {
     var rname = /^[A-Za-z]{2,}\s[a-zA-z]{2,}$/;
     var fname = rname.test(vname);
 
-    var rzip = /^[0-9]{3}[0-9]{3}$/;
+    var rzip = /^[0-9]{6}$/;
     var fzip = rzip.test(vzip);
 
     var rmail = /^[A-Za-z0-9.-_]{4,}@[A-Za-z0-9]{1,}\.[a-z]{2,3}$/;
     var fmail = rmail.test(vmail);
 
+    
+    
+    
+    
+    
+    
     if (vpass1 == vpass2) {
         var spass = true;
     }
@@ -34,12 +39,12 @@ var verification = function () {
     }
 
 
-    var vdob = document.getElementById("dob").value;
-    var yr1 = new Date(vdob).getFullYear();
-    var yr2 = new Date().getFullYear();
-    var yrdiff;
-
-    yrdiff = yr2 - yr1;
+    
+    var fdob = new Date(vdob).getTime()
+    var pdate = new Date().getTime()
+    var dobdiff = (pdate - fdob) / (1000 * 60 * 60 * 24 * 365);
+    
+    console.log(dobdiff)
 
 
 
@@ -60,14 +65,14 @@ var verification = function () {
     else if (fname == false) {
         alert("Enter valid first name and last name!");
     }
+    else if (dobdiff < 18) {
+        alert("You should be over 18 to register!");
+    }
     else if (fzip == false) {
         alert("Enter a valid ZIP code!");
     }
     else if (fmail == false) {
         alert("enter valid Email id");
-    }
-    else if (yrdiff < 18) {
-        alert("You should be over 18 to register!");
     }
     else {
         alert("Registration successful!")
