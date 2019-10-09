@@ -1,0 +1,57 @@
+<table class="table table-primary table-hover">
+    <thead>
+        <th>Department ID</th>
+        <th>Name</th>
+        <th>Group Name</th>
+        <th>Modified Date</th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let item of deptlist; let i=index">
+            <td>{{item.DepartmentID}}</td>
+            <td>{{item.Name}}</td>
+            <td>{{item.GroupName}}</td>
+            <td>{{item.ModifiedDate | date:'dd/MM/yyyy'}}</td>
+            <td><button id="edit" (click)="editdata(i)">Edit</button></td>
+            <td><button id="delete" (click)="deletedata(i)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<div id="updatediv" *ngIf="ifupdate">
+
+    <form #updatForm="ngForm" (ngSubmit)="done()">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Update Department Details</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="id">Department ID:</label>
+                    <input id="id" type="text" class="form-control" name="DepartmentID"  [(ngModel)]="dep.DepartmentID">
+
+                </div>
+                <div class="form-group">
+                    <label for="fullName">Name:</label>
+                    <input id="fullName" type="text" class="form-control" name="Name" [(ngModel)]="dep.Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="grpname">Group Name:</label>
+                    <input type="text" name="GroupName" id="grpname" class="form-control" [(ngModel)]="dep.GroupName">
+                </div>
+
+                <div class="form-group">
+                    <label for="mdate">Modified Date:&emsp;</label>
+                    <input type="date" name="ModifiedDate" id="mdate" [(ngModel)]="dep.ModifiedDate">
+                </div>
+
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button class="btn btn-primary" type="submit">Update</button>
+        
+</div>
+</form>
+</div>

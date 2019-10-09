@@ -1,0 +1,29 @@
+<h2>Department Entry Form</h2>
+<form #deptForm="ngForm" (ngSubmit)="savedata()">
+
+  
+    <div class="form-group">
+        <label for="id">Department ID:</label>
+        <input type="text" name="DepartmentID" id="id" class="form-control" [(ngModel)]="dept.DepartmentID" >
+    </div>
+
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" name="Name" id="name" class="form-control" [(ngModel)]="dept.Name" >
+    </div>
+
+    <div class="form-group">
+            <label for="grpname">Group Name:</label>
+            <input type="text" name="GroupName" id="grpname" class="form-control" [(ngModel)]="dept.GroupName" >
+        </div>
+    
+  <div class="form-group"> 
+<label for="mdate">Modified Date:&emsp;</label>
+<input type="date" name="ModifiedDate" id="mdate" [(ngModel)]="dept.ModifiedDate">
+</div>  
+
+ <div class="form-group"> 
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</form>
+
