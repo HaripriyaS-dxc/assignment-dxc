@@ -1,0 +1,6 @@
+C:\Users\hs55\source\repos\receipt\Area\bin\Debug\Area.exe.config
+C:\Users\hs55\source\repos\receipt\Area\bin\Debug\Area.exe
+C:\Users\hs55\source\repos\receipt\Area\bin\Debug\Area.pdb
+C:\Users\hs55\source\repos\receipt\Area\obj\Debug\Area.csprojAssemblyReference.cache
+C:\Users\hs55\source\repos\receipt\Area\obj\Debug\Area.exe
+C:\Users\hs55\source\repos\receipt\Area\obj\Debug\Area.pdb

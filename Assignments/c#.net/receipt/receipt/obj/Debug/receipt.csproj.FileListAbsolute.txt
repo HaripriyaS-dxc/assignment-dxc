@@ -1,0 +1,6 @@
+C:\Users\hs55\source\repos\receipt\receipt\bin\Debug\receipt.exe.config
+C:\Users\hs55\source\repos\receipt\receipt\bin\Debug\receipt.exe
+C:\Users\hs55\source\repos\receipt\receipt\bin\Debug\receipt.pdb
+C:\Users\hs55\source\repos\receipt\receipt\obj\Debug\receipt.exe
+C:\Users\hs55\source\repos\receipt\receipt\obj\Debug\receipt.pdb
+C:\Users\hs55\source\repos\receipt\receipt\obj\Debug\Receipt.csprojAssemblyReference.cache
