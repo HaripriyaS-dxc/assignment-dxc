@@ -1,0 +1,6 @@
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assignments\c#.net\Asmt2\Banking\bin\Debug\Banking.exe.config
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assignments\c#.net\Asmt2\Banking\bin\Debug\Banking.exe
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assignments\c#.net\Asmt2\Banking\bin\Debug\Banking.pdb
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assignments\c#.net\Asmt2\Banking\obj\Debug\Banking.csprojAssemblyReference.cache
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assignments\c#.net\Asmt2\Banking\obj\Debug\Banking.exe
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assignments\c#.net\Asmt2\Banking\obj\Debug\Banking.pdb
