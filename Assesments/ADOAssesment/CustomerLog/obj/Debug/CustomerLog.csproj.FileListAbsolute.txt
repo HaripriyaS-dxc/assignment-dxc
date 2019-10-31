@@ -1,0 +1,6 @@
+C:\Users\hs55\Documents\Training\C#demos\ADOAssesment\CustomerLog\bin\Debug\CustomerLog.exe.config
+C:\Users\hs55\Documents\Training\C#demos\ADOAssesment\CustomerLog\bin\Debug\CustomerLog.exe
+C:\Users\hs55\Documents\Training\C#demos\ADOAssesment\CustomerLog\bin\Debug\CustomerLog.pdb
+C:\Users\hs55\Documents\Training\C#demos\ADOAssesment\CustomerLog\obj\Debug\CustomerLog.csprojAssemblyReference.cache
+C:\Users\hs55\Documents\Training\C#demos\ADOAssesment\CustomerLog\obj\Debug\CustomerLog.exe
+C:\Users\hs55\Documents\Training\C#demos\ADOAssesment\CustomerLog\obj\Debug\CustomerLog.pdb
