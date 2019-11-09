@@ -1,0 +1,11 @@
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assesments\EntityFramework\Assessment\Assessment\bin\Debug\Assessment.exe.config
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assesments\EntityFramework\Assessment\Assessment\bin\Debug\Assessment.exe
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assesments\EntityFramework\Assessment\Assessment\bin\Debug\Assessment.pdb
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assesments\EntityFramework\Assessment\Assessment\obj\Debug\Assessment.csprojAssemblyReference.cache
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assesments\EntityFramework\Assessment\Assessment\obj\Debug\Assessment.exe
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assesments\EntityFramework\Assessment\Assessment\obj\Debug\Assessment.pdb
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assesments\EntityFramework\Assessment\Assessment\bin\Debug\EntityFramework.dll
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assesments\EntityFramework\Assessment\Assessment\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assesments\EntityFramework\Assessment\Assessment\bin\Debug\EntityFramework.xml
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assesments\EntityFramework\Assessment\Assessment\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hs55\Documents\GitHub\assignment-dxc\Assesments\EntityFramework\Assessment\Assessment\obj\Debug\Assessment.csproj.CopyComplete
