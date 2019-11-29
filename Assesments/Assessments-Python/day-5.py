@@ -16,6 +16,7 @@ for i in soup.find_all("div",attrs={"id" :'tlSensex'}):
 for i in soup.find_all("div",attrs={"id" :'tlNifty'}):
     for j in i.find_all("td"):
         print(j.string)
+        li1.append(j.string)
 
 for i in soup.find_all("div",attrs={"id" :'tgSensex'}):
     for j in i.find_all("td"):
@@ -28,9 +29,16 @@ for i in soup.find_all("div",attrs={"id" :'tgNifty'}):
 db = pymysql.connect("localhost","root","","test" )
 cursor = db.cursor()
 
-for i in range(1,5):
-    
-cursor.execute("""INSERT INTO SENLOSER
-         VALUES (%s,%s,%s,%s)""",(li1[0],li1[1],li1[2],li1[3]))
+##cursor.execute("""CREATE TABLE SENSEXLOSER (
+##         COMPANY  CHAR(30),
+##         PRICE  CHAR(20),
+##         CHANGE1 CHAR(20),  
+##         LOSS1 CHAR(20) ) """)   
+i=0
+while i<(len(li1)-1):
+    cursor.execute("""INSERT INTO SENSEXLOSER
+         VALUES (%s,%s,%s,%s)""",(li1[i],li1[i+1],li1[i+2],li1[i+3]))
+    i=i+4
+        
 db.commit()
 db.close()
