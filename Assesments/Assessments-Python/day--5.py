@@ -1,18 +1,30 @@
 from tkinter import*
+import pymysql
+##db = pymysql.connect("localhost","root","","test" )
+##cursor = db.cursor(pymysql.cursors.DictCursor)
+##data = cursor.execute("""CREATE TABLE USERS (
+##      FIRST_NAME  CHAR(20) NOT NULL,
+##      Email  CHAR(30),
+##      AGE INT,  
+##      Gender CHAR(1))""")
+##resp=cursor.fetchall()
+##print(resp)
+##for row in resp:
+##    print(row["fname"] , row["lname"])
+##db.close()
 
-#########################################################################
-##db = Mysqldb.connect('localhost', 'root', '----', '----', 'design')
-##cursor = db.cursor()
-##
-##def submit_it():
-##    cursor.execute('INSERT INTO time VALUES (%s)', (data.get(),)) # place data.get() as a parameter as a type or list 
-##
-##data = Entry(gui2,  text = 'food name')
-##data.place(x=100,y=100)
-##
-##submit = Button(gui2, text = 'submit', command = submit_it) # don't call submit_it, get rid of the ()
-##submit.place(x=200,y=200)
-############################################################################
+
+
+def submit_it():
+    db = pymysql.connect("localhost","root","","test" )
+    cursor = db.cursor()
+    d={1:"M",2:"F"}
+    sel=d[var.get()]
+    cursor.execute('INSERT INTO USERS VALUES (%s, %s, %s, %s)', (entry_1.get(),entry_2.get(),entry_4.get(),sel)) 
+    db.commit()
+    db.close()
+
+
 root = Tk()
 root.geometry('500x500')
 root.title("Registration Form")
@@ -27,7 +39,7 @@ label_1.place(x=80,y=130)
 entry_1 = Entry(root)
 entry_1.place(x=240,y=130)
 
-label_2 = Label(root, text="Email",width=20,font=("bold", 10))
+label_2 = Label(root, text="Password",width=20,font=("bold", 10))
 label_2.place(x=68,y=180)
 
 entry_2 = Entry(root)
@@ -43,10 +55,9 @@ label_4 = Label(root, text="Age:",width=20,font=("bold", 10))
 label_4.place(x=70,y=280)
 
 
-entry_2 = Entry(root)
-entry_2.place(x=240,y=280)
+entry_4 = Entry(root)
+entry_4.place(x=240,y=280)
 
-Button(root, text='Submit',width=20,bg='brown',fg='white').place(x=180,y=380)
+Button(root, text='Submit',width=20,bg='brown',fg='white',command = submit_it).place(x=180,y=380)
 # it is use for display the registration form on the window
 root.mainloop()
-print("registration form  seccussfully created...")
